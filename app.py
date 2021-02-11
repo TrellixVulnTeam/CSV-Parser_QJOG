@@ -1,11 +1,13 @@
 import csv
 
-# Read csv
+
+# # Read csv
 with open('team.csv', 'r') as csv_file:
     csv_reader = csv.reader(csv_file)
 
-    for line in csv_reader:
-        print(line)
+# # Write new csv
+#     with open('new_names.csv', 'w') as new_file:
+#         csv_writer = csv.writer(new_file, delimiter='\t')
 
-# Parse csv
-# Write new csv
+#         for line in csv_reader:
+#             csv_writer.writerow(line)
