@@ -1,0 +1,5 @@
+{
+    "python.formatting.provider": "autopep8",
+    "python.pythonPath": "/home/moringa-access/moringa-school-projects/CSV/venv/bin/python3",
+    "git.ignoreLimitWarning": true
+}
