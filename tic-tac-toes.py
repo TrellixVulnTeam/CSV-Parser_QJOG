@@ -1,3 +1,4 @@
+# Trying with the PYGAME but turned out very bad.
 import pygame
 import sys
 # import sys

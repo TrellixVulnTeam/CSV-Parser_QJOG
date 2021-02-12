@@ -9,7 +9,7 @@ with open('team.csv', 'r') as csv_file:
 # # Write new csv
     with open('new_names.csv', 'w') as new_file:
 
-        csv_writer = csv.DictWriter(new_file, delimiter='\t')
+        csv_writer = csv.writer(new_file)
 
         # csv_writer.writeheader()
 
