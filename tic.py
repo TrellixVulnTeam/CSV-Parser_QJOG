@@ -6,7 +6,9 @@ from functools import partial
 from tkinter import messagebox
 from copy import deepcopy
 
-# X starts so true
+tk = Tk()
+
+# Players to start true
 clicked = True
 count = 0
 
@@ -182,7 +184,7 @@ def b_click(b):
         messagebox.showerror(
             "Tic Tac Toe", "Hey! That box has already been selected\nPick Another Box...")
 
-# Start the game over!
+# Reset Game
 
 
 def reset():
@@ -227,10 +229,11 @@ def reset():
     b9.grid(row=2, column=2)
 
 
-# Create menue
-my_menu = Menu()
+# Menu
+my_menu = Menu(tk)
+tk.config(menu=my_menu)
 
-# Create Options Menu
+# Options Menu
 options_menu = Menu(my_menu, tearoff=False)
 my_menu.add_cascade(label="Options", menu=options_menu)
 options_menu.add_command(label="Rest Game", command=reset)
